@@ -1,0 +1,843 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0213.2333                               -->
+<workbook original-version='18.1' source-build='2019.1.0 (20191.19.0213.2333)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneFriendlyName />
+  </document-format-change-manifest>
+  <repository-location id='CPPFASTExtraCreditTranSpring2019' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Form Responses 1 (FAST Workshops Extra Credit Sign-In Spring 2019  (Responses))' inline='true' name='federated.1a3dei60t290mk114ynca0e0z4h1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='FAST Workshops Extra Credit Sign-In Spring 2019  (Responses)' name='google-sheets.1ardz2711n9zvz1deo7ke1mj2i5t'>
+            <connection REDIRECT_URI='urn:ietf:wg:oauth:2.0:oob' SCOPE='email profile https://www.googleapis.com/auth/drive.readonly' class='google-sheets' cleaning='no' compat='no' dataRefreshTime='' filename='FAST Workshops Extra Credit Sign-In Spring 2019  (Responses)' googleSheetId='1vs7f6WNDeYOmBT-E_aKzXZzk5gwJUmJq8_gWCm6r7cY' interpretationMode='8' mimeType='application/vnd.google-apps.spreadsheet' server='' server-oauth='' username='cppfast.org@gmail.com' validate='no' workgroup-auth-mode='prompt' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='string' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Prof1]' />
+            <value name='[Prof2]' />
+            <value name='[Prof3]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Form Responses 1].[F7]' />
+              <field name='[Form Responses 1].[F8]' />
+              <field name='[Form Responses 1].[F9]' />
+            </group>
+          </groups>
+          <relation connection='google-sheets.1ardz2711n9zvz1deo7ke1mj2i5t' name='Form Responses 1' table='[&apos;Form Responses 1$&apos;]' type='table'>
+            <columns gridOrigin='A1:I264:no:A1:I264:0' header='yes' outcome='2'>
+              <column datatype='datetime' name='Timestamp' ordinal='0' />
+              <column datatype='string' name='Type' ordinal='1' />
+              <column datatype='string' name='Email Address' ordinal='2' />
+              <column datatype='string' name='Which classes do you attend?' ordinal='3' />
+              <column datatype='string' name='Last Name' ordinal='4' />
+              <column datatype='string' name='First Name' ordinal='5' />
+              <column datatype='string' name='F7' ordinal='6' />
+              <column datatype='string' name='F8' ordinal='7' />
+              <column datatype='string' name='F9' ordinal='8' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Timestamp</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Timestamp]</local-name>
+            <parent-name>[Form Responses 1]</parent-name>
+            <remote-alias>Timestamp</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Form Responses 1]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Email Address</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Email Address]</local-name>
+            <parent-name>[Form Responses 1]</parent-name>
+            <remote-alias>Email Address</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Which classes do you attend?</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Which classes do you attend?]</local-name>
+            <parent-name>[Form Responses 1]</parent-name>
+            <remote-alias>Which classes do you attend?</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Last Name]</local-name>
+            <parent-name>[Form Responses 1]</parent-name>
+            <remote-alias>Last Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[First Name]</local-name>
+            <parent-name>[Form Responses 1]</parent-name>
+            <remote-alias>First Name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Form Responses 1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I264:no:A1:I264:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Last Name' datatype='string' name='[Calculation_1617073798186995712]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='upper(left([Last Name],1))+right([Last Name],LEN([Last Name])-1)' />
+      </column>
+      <column caption='First Name' datatype='string' name='[Calculation_1617073798187540481]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='upper(left([First Name],1))+right([First Name],LEN([First Name])-1)' />
+      </column>
+      <column caption='Professor' datatype='string' name='[Calculation_870039209758564356]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='split([Pivot Field Values],&apos; &apos;,1)' />
+      </column>
+      <column caption='Section' datatype='string' name='[Calculation_870039209758879749]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='Right([Pivot Field Values],len([Pivot Field Values])-find([Pivot Field Values],&apos; &apos;))' />
+      </column>
+      <column caption='Email' datatype='string' name='[Email Address]' role='dimension' type='nominal' />
+      <column caption='First Name 2' datatype='string' name='[First Name]' role='dimension' type='nominal' />
+      <column caption='Last Name 2' datatype='string' name='[Last Name]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Date' datatype='datetime' name='[Timestamp]' role='dimension' type='ordinal' />
+      <column datatype='string' hidden='true' name='[Which classes do you attend?]' role='dimension' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Raoul/Documents/SCHOOL/CPP FAST/Form Responses 1 (FAST Workshops Extra Credit Sign-In Spring 2019  (Responses)).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/10/2019 12:13:17 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Form Responses 1 (FAST Workshops Extra Credit Sign-In Spring 2019  (Responses))' increment-value='%null%' refresh-type='create' rows-inserted='789' timestamp-start='2019-05-10 00:13:17.603' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Timestamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Timestamp</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Form Responses 1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>263</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Form Responses 1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Email Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Email Address]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Email Address</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Form Responses 1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Last Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Last Name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Form Responses 1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>First Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[First Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>First Name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Form Responses 1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.580605' measure-ordering='alphabetic' measure-percentage='0.419395' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Timestamp' />
+        <field-sort-custom-order field='Type' />
+        <field-sort-custom-order field='Email Address' />
+        <field-sort-custom-order field='Calculation_1617073798186995712' />
+        <field-sort-custom-order field='Last Name' />
+        <field-sort-custom-order field='First Name' />
+        <field-sort-custom-order field='Calculation_1617073798187540481' />
+        <field-sort-custom-order field='Pivot Field Names' />
+        <field-sort-custom-order field='Pivot Field Values' />
+        <field-sort-custom-order field='Calculation_870039209758564356' />
+        <field-sort-custom-order field='Calculation_870039209758879749' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='FAST EC'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='26'>CPP FAST Extra Credit Attendance</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Form Responses 1 (FAST Workshops Extra Credit Sign-In Spring 2019  (Responses))' name='federated.1a3dei60t290mk114ynca0e0z4h1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1a3dei60t290mk114ynca0e0z4h1'>
+            <column caption='Last Name' datatype='string' name='[Calculation_1617073798186995712]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='upper(left([Last Name],1))+right([Last Name],LEN([Last Name])-1)' />
+            </column>
+            <column caption='First Name' datatype='string' name='[Calculation_1617073798187540481]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='upper(left([First Name],1))+right([First Name],LEN([First Name])-1)' />
+            </column>
+            <column caption='Professor' datatype='string' name='[Calculation_870039209758564356]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='split([Pivot Field Values],&apos; &apos;,1)' />
+            </column>
+            <column caption='Section' datatype='string' name='[Calculation_870039209758879749]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='Right([Pivot Field Values],len([Pivot Field Values])-find([Pivot Field Values],&apos; &apos;))' />
+            </column>
+            <column caption='Email' datatype='string' name='[Email Address]' role='dimension' type='nominal' />
+            <column caption='First Name 2' datatype='string' name='[First Name]' role='dimension' type='nominal' />
+            <column caption='Last Name 2' datatype='string' name='[Last Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Pivot Field Values]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='datetime' name='[Timestamp]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[Email Address]' derivation='Count' name='[cnt:Email Address:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1617073798186995712]' derivation='None' name='[none:Calculation_1617073798186995712:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1617073798187540481]' derivation='None' name='[none:Calculation_1617073798187540481:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_870039209758564356]' derivation='None' name='[none:Calculation_870039209758564356:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_870039209758879749]' derivation='None' name='[none:Calculation_870039209758879749:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Timestamp]' derivation='None' name='[none:Timestamp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <alphabetic-sort column='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798186995712:nk]' direction='ASC' />
+          <alphabetic-sort column='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798187540481:nk]' direction='DESC' />
+          <filter class='categorical' column='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk]'>
+            <groupfilter function='member' level='[none:Calculation_870039209758564356:nk]' member='&quot;Tran&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Timestamp:qk]' included-values='in-range'>
+            <min>#2019-02-15 10:17:30#</min>
+            <max>#2019-04-26 15:03:32.509#</max>
+          </filter>
+          <slices>
+            <column>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Timestamp:qk]</column>
+            <column>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' data-class='subtotal' scope='cols' value='center' />
+            <format attr='text-align' data-class='subtotal' scope='rows' value='center' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='14' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='9' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758879749:nk]' value='188' />
+            <format attr='vertical-align' data-class='subtotal' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk]' value='center' />
+            <format attr='width' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Type:nk]' value='116' />
+            <format attr='width' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798186995712:nk]' value='140' />
+            <format attr='width' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798187540481:nk]' value='136' />
+            <format attr='width' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk]' value='148' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='12' />
+            <format attr='text-decoration' value='underline' />
+            <format attr='font-style' value='normal' />
+            <format attr='font-weight' value='normal' />
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='cols' value='center' />
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='font-weight' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk]' value='bold' />
+            <format attr='vertical-align' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk]' value='center' />
+            <format attr='vertical-align' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758879749:nk]' value='center' />
+            <format attr='text-decoration' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758879749:nk]' value='underline' />
+            <format attr='font-weight' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758879749:nk]' value='bold' />
+            <format attr='font-family' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758879749:nk]' value='Tahoma' />
+            <format attr='font-size' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk]' value='16' />
+            <format attr='text-align' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798186995712:nk]' value='center' />
+            <format attr='font-size' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798186995712:nk]' value='15' />
+            <format attr='text-align' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798187540481:nk]' value='center' />
+            <format attr='text-orientation' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798187540481:nk]' value='0' />
+            <format attr='font-size' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798187540481:nk]' value='15' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[cnt:Email Address:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[cnt:Email Address:qk]' num-steps='5' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1a3dei60t290mk114ynca0e0z4h1].[cnt:Email Address:qk]' value='Attendance'>
+              <formatted-text>
+                <run>Attendance</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1a3dei60t290mk114ynca0e0z4h1].[cnt:Email Address:qk]' />
+              <text column='[federated.1a3dei60t290mk114ynca0e0z4h1].[cnt:Email Address:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Professor:&#9;</run>
+                <run bold='true'>&lt;[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Section:&#9;</run>
+                <run bold='true'>&lt;[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758879749:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>First Name:&#9;</run>
+                <run bold='true'>&lt;[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798187540481:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Last Name:&#9;</run>
+                <run bold='true'>&lt;[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798186995712:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Attendance:&#9;</run>
+                <run bold='true'>&lt;[federated.1a3dei60t290mk114ynca0e0z4h1].[cnt:Email Address:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk] / ([federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758879749:nk] / ([federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798186995712:nk] / ([federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798187540481:nk] / [federated.1a3dei60t290mk114ynca0e0z4h1].[none:Type:nk]))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5A6FBCAD-037C-4E53-8DDC-00C646DA4267}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='vertical-align' id='dash-text_34' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='1200' maxwidth='1000' minheight='1200' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='8' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98666' id='11' param='horz' type='layout-flow' w='98400' x='800' y='667'>
+            <zone h='98666' id='9' type='layout-basic' w='82000' x='800' y='667'>
+              <zone h='98666' id='7' name='FAST EC' w='82000' x='800' y='667'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='164' h='98666' id='10' is-fixed='true' param='vert' type='layout-flow' w='16400' x='82800' y='667'>
+              <zone fixed-size='68' h='6334' id='12' is-fixed='true' name='FAST EC' pane-specification-id='1' param='[federated.1a3dei60t290mk114ynca0e0z4h1].[cnt:Email Address:qk]' type='color' w='16400' x='82800' y='667'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='174' friendly-name='heisenberg.png' h='15167' id='13' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/Raoul/Downloads/Pictures/hdr.png' type='bitmap' url='cppfast.org' w='16400' x='82800' y='7001'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='129' forceUpdate='true' h='11417' id='34' is-fixed='true' type='text' w='16400' x='82800' y='22168'>
+                <formatted-text>
+                  <run fontsize='12'>Created By: </run>
+                  <run>Æ&#10;</run>
+                  <run fontsize='12'>Raoul Soans &amp; </run>
+                  <run>Æ&#10;</run>
+                  <run fontsize='12'>Greg Kutzbach</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontsize='12'>9 May 2019</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='65748' id='37' is-centered='0' is-scaled='1' param='C:/Users/Raoul/Downloads/Pictures/LinkedIn_logo_initials.png' type='bitmap' url='https://www.linkedin.com/in/raoul-soans-1b861562' w='16400' x='82800' y='33585'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='54' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98666' id='55' param='vert' type='layout-flow' w='98400' x='800' y='667'>
+                <zone fixed-size='280' h='98666' id='7' is-fixed='true' name='FAST EC' w='82000' x='800' y='667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='68' h='6334' id='12' name='FAST EC' pane-specification-id='1' param='[federated.1a3dei60t290mk114ynca0e0z4h1].[cnt:Email Address:qk]' type='color' w='16400' x='82800' y='667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='174' friendly-name='heisenberg.png' h='15167' id='13' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/Raoul/Downloads/Pictures/hdr.png' type='bitmap' url='cppfast.org' w='16400' x='82800' y='7001'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='129' forceUpdate='true' h='11417' id='34' type='text' w='16400' x='82800' y='22168'>
+                  <formatted-text>
+                    <run fontsize='12'>Created By: </run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='12'>Raoul Soans &amp; </run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='12'>Greg Kutzbach</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontsize='12'>9 May 2019</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='65748' id='37' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/Raoul/Downloads/Pictures/LinkedIn_logo_initials.png' type='bitmap' url='https://www.linkedin.com/in/raoul-soans-1b861562' w='16400' x='82800' y='33585'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A62115D3-98C3-414B-A2E4-8CFBD01B7CF2}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='FAST EC'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1a3dei60t290mk114ynca0e0z4h1].[cnt:Email Address:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[cnt:Email Address:qk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798186995712:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_1617073798187540481:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209745731584:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209746624513:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209747030018:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758564356:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209758879749:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209763430406:qk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209763479559:qk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209763516424:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Calculation_870039209763807241:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Email Address:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:First Name:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Last Name:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Timestamp:qk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Type:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Which classes do you attend? - Split 1 - Split 1:nk]</field>
+            <field>[federated.1a3dei60t290mk114ynca0e0z4h1].[none:Which classes do you attend? - Split 1:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FCBBC2E7-453D-4EED-AC7C-09A6CB01FBF7}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='FAST EC' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{E060735C-EFC7-46EB-BB83-7F8E85F98FD6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      BCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkA
+      QmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCU
+      JgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkS
+      gFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEI
+      pUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCa
+      BCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkA
+      QmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCU
+      JgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkS
+      gFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEI
+      pUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpf1/yfzhmURD
+      WokAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='116' name='FAST EC' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAB0CAYAAADThz1kAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAENUlEQVR4nO3df2iUdQDH8Y+2Ew00O/ujE02JmOj68UciaDBjomBmjSSlVlj2h9GxQUbW
+      orQrdGGwaqNQo9I/NEK2acecNYgxdGvxQAaO6ZDmBu4msREdqXiL9cdGedtoXdw86fN+/fU8
+      z27H9549732f7zZuU4aGhoYEmJqa6wEAuUQAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsJY30QOC
+      ILgR4wByYgpvjgtn3ALBGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHA
+      GgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHA2oTvDg3871ztVeuJ
+      OjW1dTEDwNCvP6mx4ayuLdnEDABHt+iu4nI9u3Yu/x8A3rgFgjUCgLHT3ALBGzMArBEArHn9
+      GLT7oEo2VOvcv3nsukoFscLJHhFyoO/bAwoWl+jR+SFmABj6o0fxije172TCfBHcvFNLt9UP
+      b/Md38bV3ladqGtSW1ev2S0QIGn63OUqji5XsdzWAP/F9euGdZUKYiuUOP6OSt9v1IXkGlUG
+      MRVqUANnmxSvrVXDqQ51X0oqJUkzwrrnvrV6oTyq1fOn/f2c1808i0pr9EVRpz6u2Kevf7yg
+      ZCqkmYsf01t7XlVRhC9PtrW3t6ftc4Yz9HtLhZ7bcVz9aUcvKv7u66oevbq+MqDzPxxS+cbT
+      6j30mTbfPfZ0J45Etaq6T1f+OpJSsqNG26NhHa7dqvzJeBHGqqqq0vYJIBODbfokdmzUxT9s
+      emSZSh7fovWrl2jh7bcqb/Cyuhre1oux79Sfatfegy0qiRWOPeHhldr+3lNamT9Ps6YOqO6V
+      Ndp1SlJPs1q7typ/weS/LCdlZWVp+wSQiW9qdealw2rZkq9paR9YoE27y9X4+UfavblDXb9c
+      UjKV/qmp8126qEKNvp4jqzZq/b3zRvbCmjN70kYPSQUFBWn7BJCJh95Q9ZiLX9Jvzdr55DbV
+      jzc14KbG7wEyMfs2zRrncOeXH45c/CEVPL9X8ebvFQSBgqBGpYtu8BiREWaALOjr7RneiDyj
+      16JLFcntcJABZoAsyMsLDW8kWnSy85qkQV1OnFH8g1068nNOh4YJMANkwbJHntCcY1+pX+e0
+      /+kV2j9yPHTnA8q/Q+pL5HR4+AfMAFmQ9+DLOrBng+4Pz5AkhWYu1MOln6r+6A4VjbdowE3D
+      +2+BYI8ZANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYI
+      ANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANb+
+      BIpM9JmH30yjAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
